@@ -28,7 +28,7 @@ SECRET_KEY = 's#krnx%ea07w(g95n7eh+ty^4!z_$pv9vc4vp1#za%&rnw4yrv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', 'pksream.herokuapp.com']
 
 
 # Application definition
