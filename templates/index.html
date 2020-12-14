@@ -1,0 +1,22 @@
+{% extends "home.html" %} {% block card %}
+
+{% for movie in movies %}
+<div class="card m-4 col" style="width: 28rem">
+  <img src="{{movie.thumbnail}}" class="card-img-top card_img" alt="" />
+  <div class="card-body">
+    <h5 class="card-title">{{movie.name}}</h5>
+    <p class="card-text">
+      {{movie.desc|truncatechars:100 }}
+    </p>
+    <a
+      href="/{{movie.slug}}"
+      class="btn btn-outline-dark "
+      style="width: 100%; font-weight: bold"
+      >Watch Now 👁</a
+    >
+  </div>
+</div>
+{% endfor %}
+{% endblock card %}
+
+
